@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <meta charset="utf-8">
+  <!---Fonts to be used on the website (at least 3)--->
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Varela+Round');
+  </style>
+
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Rubik');
+  </style>
+
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed');
+  </style>
+
+
+  <link href="../css/styles.css" rel="stylesheet">
+  <title>Selecciona estado</title>
+  <link rel="icon" href="../images/archive.png" type="image/png">
+</head>
+    <body>
+      <div class="wrapper">
+
+          <nav>
+            <!--<i class="material-icons">airplanemode_active</i> -->
+            <span id="pageTitle">
+            <a class="navItemTitle" href="../pages/index.html">TuDiáspora</a>
+          </span>
+            <span id="mainLinks">
+            <a class="navItem" href="../pages/about.html">Misión</a>
+            <a id="linkAyuda" class="navItem" href="../pages/help.html">Ayuda</a>
+            <a class="navItem" href="../pages/contact.html">Contacto</a>
+          </span>
+        </nav>
+
+    <!--- Para propositos del proyecto solo se puede clickear Florida en el mapa, sin embargo los otros estados
+    sería algo similar. Tener en cuenta que de hacer click en cualuier estado que NO sea
+    Florida no lo enviará a ninguna página--->
+
+<iframe id="map" src="https://createaclickablemap.com/map.php?&id=81267&maplocation=false&online=true" width="900" height="525" style="border: none;"></iframe>
+<script>if (window.addEventListener){ window.addEventListener("message", function(event) { if(event.data.length >= 22) { if( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent){ window.attachEvent("message", function(event) { if( event.data.length >= 22) { if ( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } </script>
+        <footer class="shortPage">
+          <h4> Copyright &copy; Victor Nazario</h4>
+        </footer>
+
+
+      </div>
+
+
+
+    </body>
+</html>
